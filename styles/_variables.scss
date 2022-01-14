@@ -1,0 +1,21 @@
+$main-color-gradient: linear-gradient(
+  90deg,
+  rgba(49, 129, 220, 1) 0%,
+  rgba(66, 90, 229, 1) 100%
+);
+$primary-color: #425AE5;
+$secondary-color: #3181DC;
+$tertiary-color: #4A90DF;
+$font-color: #828282;
+$white: #ffffff;
+
+@mixin loginButton {
+  width: 130px;
+  height: 40px;
+  border: none;
+  border-radius: 13px;
+  background-color: #3181dc;
+  color: $white;
+  cursor: pointer;
+  font-weight: bold;
+}

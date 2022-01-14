@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cabinit Medical</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="/styles/patients.css" />
+</head>
+
+<body>
+  
+  <header>
+    <div class="logo">
+      <img src="./assets/logo/rr.png" alt="logo image" />
+    </div>
+    <nav class="navELs">
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+      </ul>
+    </nav>
+    <a id="login" class="navELs" href="./index.html"><button>Logout</button></a>
+    <div id="menu" class="menu ghbar"
+      onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))">
+      <svg id="hamburger" width="100" height="100" viewBox="0 0 100 100">
+        <path class="line line1"
+          d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+        <path class="line line2" d="M 20,50 H 80" />
+        <path class="line line3"
+          d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+      </svg>
+    </div>
+  </header>
+  <h2 class="heading2">Gestion des patients</h2>
+  <div class="formulaire">
+    <form id="frml" method="post">
+      <div class="field">
+        <label id="l-last-name" for="last-name">Nom</label>
+        <input  type="text" id="last-name" name="last-name" />
+      </div>
+      <div class="field">
+        <label id="l-first-name" for="first-name">Prénom</label>
+        <input  type="text" id="first-name" name="first-name" />
+      </div>
+      <div class="field">
+        <label id="l-date" for="date">Date de naissance</label>
+        <input  type="date" id="date" name="date" />
+      </div>
+      <div class="field">
+        <label id="l-num-tl" for="num-tl">Numéro de téléphone</label>
+        <input  type="text" id="num-tl" name="num-tl" />
+      </div>
+      <div class="field">
+        <label id="l-email" for="email">Email</label>
+        <input  type="email" id="email" name="email" />
+      </div>
+  
+      <div class="field">
+        <label id="l-maladie" for="maladie">Maladie</label>
+        <input  type="text" id="maladie" name="maladie" />
+      </div>
+      <div id="msg"></div>
+    </form>
+    <div class="button">
+      <button id="ajt" class="ajouter">Ajouter</button>
+      <button id="modf" class="modif">Modifier</button>
+      <button id="supp" class="supprimer">Supprimer</button>
+    </div>
+  </div>
+  
+  <h2 class="heading2">Liste des patients</h2>
+  <footer>
+    <div class="footerDivs">
+      <img src="/assets/logo/rr.png" alt="footer logo" />
+      <div class="socials">
+        <a href="http://" target="_blank"><i class="fab fa-twitter-square"></i></a>
+        <a href="http://" target="_blank"><i class="fab fa-facebook-square"></i></a>
+        <a href="http://" target="_blank"><i class="fab fa-instagram-square"></i></a>
+      </div>
+    </div>
+    <div class="footerDivs">
+      <p class="footerHeading">Quick Links</p>
+      <a href="#">Help</a>
+      <a href="#">FAQ</a>
+      <a href="#">Contact Us</a>
+    </div>
+    <div class="footerDivs">
+      <p class="footerHeading">contact</p>
+      <div class="contactEls">
+        <i class="fas fa-map-marker-alt"></i>93, Bd Massira Khadra, 4ème ETG
+        Casablanca
+      </div>
+      <div class="contactEls">
+        <i class="fas fa-envelope-square"></i>rahbanirafik@traumatologie.com
+      </div>
+    </div>
+  </footer>
+  <div id="mnav" class="mobileNavigation">
+    <a class="firstpage" href="./index.html">Home</a>
+    <a id="login"  href="./patients.html"><button>Login</button></a>
+  </div>
+  <script src="https://kit.fontawesome.com/a7f2aae210.js" crossorigin="anonymous"></script>
+  <script src="./scripts/script.js"></script>
+  <script src="./scripts/form.js"></script>
+</body>
+
+</html>
